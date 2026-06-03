@@ -26,16 +26,7 @@ const HomeAboutPillars = () => {
 
         <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10">
           {PILLARS.map((pillar, index) => (
-            <div
-              key={pillar.title}
-              className={
-                index === 1
-                  ? 'md:mt-16'
-                  : index === 2
-                    ? 'md:mt-8'
-                    : ''
-              }
-            >
+            <div key={pillar.title}>
               <p className="font-serif text-6xl font-light text-stone">
                 {String(index + 1).padStart(2, '0')}
               </p>
