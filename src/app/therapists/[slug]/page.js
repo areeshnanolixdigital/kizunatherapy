@@ -114,7 +114,7 @@ const TherapistProfilePage = async ({ params }) => {
 
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Link
-                href={`/book-session?therapist=${therapist.slug}`}
+                href="/book-session"
                 className="group inline-flex items-center gap-3 border border-frond/30 px-5 py-3 text-sm uppercase tracking-[0.18em] text-frond transition-colors hover:bg-frond hover:text-powder focus-visible:bg-frond focus-visible:text-powder focus-visible:outline-none"
               >
                 Book with {getFirstName(therapist.name)}
