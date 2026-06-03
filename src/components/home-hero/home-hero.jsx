@@ -18,20 +18,22 @@ const HomeHero = () => {
         className="pointer-events-none absolute -top-20 -right-16 h-56 w-56 -rotate-[24deg] text-stem/15 md:hidden"
       />
 
-      <div className="relative grid grid-cols-1 gap-12 px-6 pt-20 pb-24 md:grid-cols-12 md:gap-12 md:pt-32 md:pb-32 lg:px-10 lg:pt-40 lg:pb-40">
+      <div className="relative grid grid-cols-1 gap-12 px-6 pt-20 pb-12 md:grid-cols-12 md:gap-12 md:pt-32 md:pb-16 lg:px-10 lg:pt-40 lg:pb-20">
         <div className="md:col-span-7 md:pl-[max(0px,calc(50vw-36rem))] lg:col-span-7">
           <Reveal>
-            <p className="text-xs uppercase tracking-[0.24em] text-eyebrow">
-              Compassionate care
-            </p>
+            <div className="flex items-center gap-4">
+              <span aria-hidden="true" className="h-px w-12 bg-stone" />
+              <p className="text-xs uppercase tracking-[0.3em] text-eyebrow">
+                Compassionate care
+              </p>
+            </div>
           </Reveal>
           <Reveal delay={80}>
             <h1
               id="hero-heading"
-              className="mt-8 text-[2.75rem] leading-[0.98] sm:text-6xl lg:text-[5.5rem] xl:text-[6.25rem]"
+              className="mt-8 text-[2.75rem] leading-[0.98] tracking-[-0.03em] sm:text-6xl lg:text-[5.5rem] xl:text-[6.25rem]"
             >
-              Bridging cultures, building{' '}
-              <em className="font-light italic text-eyebrow">bonds</em>,
+              Bridging cultures, building bonds,
               <br className="hidden lg:block" /> transforming lives.
             </h1>
           </Reveal>
@@ -60,17 +62,29 @@ const HomeHero = () => {
         </div>
 
         <div className="md:col-span-5 lg:col-span-5">
-          <figure className="relative md:-mr-6 lg:-mr-10">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm border-l-2 border-vein bg-sand md:aspect-[3/4]">
+          <figure className="group relative md:-mr-6 lg:-mr-10">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -left-4 -top-4 hidden h-full w-full border border-stone/50 md:block"
+            />
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-sand md:aspect-[3/4]">
               <Image
                 src="/images/about-kizuna.jpg"
                 alt="A Kizuna Therapy group session held outdoors in Istanbul"
                 fill
                 sizes="(min-width: 1024px) 540px, (min-width: 768px) 42vw, 100vw"
                 priority
-                className="object-cover transition-transform duration-1000 hover:scale-[1.02]"
+                className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+              />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-frond/20 via-transparent to-transparent"
               />
             </div>
+            <figcaption className="mt-5 flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-eyebrow">
+              <span aria-hidden="true" className="h-px w-6 bg-stone" />
+              Istanbul · Online worldwide
+            </figcaption>
           </figure>
         </div>
       </div>

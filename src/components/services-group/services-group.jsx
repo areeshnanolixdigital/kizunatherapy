@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { cn } from '@/lib/utils'
 
 const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
@@ -8,22 +9,34 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
-            <h2 className="mt-6 text-3xl leading-[1.15] sm:text-4xl">{title}</h2>
+            <SectionEyebrow>{kicker}</SectionEyebrow>
+            <h2 className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl">
+              {title}
+            </h2>
             <p className="mt-6 max-w-sm text-base leading-relaxed text-frond">
               {intro}
             </p>
           </div>
 
           <div className="md:col-span-7">
-            <ul className="space-y-12">
-              {items.map((item) => (
-                <li key={item.name}>
-                  <h3 className="text-2xl">{item.name}</h3>
-                  <p className="mt-2 font-serif italic text-eyebrow">{item.tagline}</p>
-                  <p className="mt-4 max-w-prose text-base leading-relaxed text-frond">
-                    {item.body}
-                  </p>
+            <ul className="divide-y divide-frond/12">
+              {items.map((item, index) => (
+                <li
+                  key={item.name}
+                  className="grid grid-cols-[auto_1fr] gap-x-8 py-8 first:pt-0 sm:gap-x-12"
+                >
+                  <span className="font-serif text-xl font-light text-stone sm:text-2xl">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <h3 className="text-2xl">{item.name}</h3>
+                    <p className="mt-2 text-sm uppercase tracking-[0.16em] text-eyebrow">
+                      {item.tagline}
+                    </p>
+                    <p className="mt-4 max-w-prose text-base leading-relaxed text-frond">
+                      {item.body}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>

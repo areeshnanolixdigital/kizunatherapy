@@ -21,7 +21,6 @@ const BookSessionPage = () => {
       <PageHero
         kicker="Book a session"
         title="Take the first step."
-        italic="first step"
         subtitle="Choose a therapist, share what you are hoping for, and pick a time. We will be in touch within one business day to confirm."
       />
       <Suspense fallback={<BookingFormFallback />}>

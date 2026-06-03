@@ -15,7 +15,6 @@ const ServicesPage = () => {
       <PageHero
         kicker="Therapy services"
         title="Connecting you to the support you need."
-        italic="support you need"
         subtitle="A range of services to meet you where you are — from individual counseling to relationship support and creative workshops. Culturally sensitive care, practical tools, and steady guidance."
       />
       {SERVICE_GROUPS.map((group, index) => (

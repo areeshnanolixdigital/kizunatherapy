@@ -9,14 +9,18 @@ const HomeAboutKizuna = () => {
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-12 lg:gap-20">
           <div className="md:col-span-5">
-            <figure className="relative">
-              <div className="relative aspect-[5/6] w-full overflow-hidden rounded-sm border-r-2 border-vein bg-sand">
+            <figure className="group relative md:pl-4 md:pt-4">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute left-0 top-0 hidden h-[calc(100%-1rem)] w-[calc(100%-1rem)] border border-stone/50 md:block"
+              />
+              <div className="relative aspect-[5/6] w-full overflow-hidden rounded-sm bg-sand">
                 <Image
                   src="/images/about-kizuna.jpg"
                   alt="A Kizuna Therapy community session — group gathered outdoors in Istanbul"
                   fill
                   sizes="(min-width: 1024px) 480px, (min-width: 768px) 42vw, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                 />
               </div>
               <figcaption className="absolute -right-4 bottom-8 max-w-[200px] bg-frond px-4 py-3 text-xs uppercase tracking-[0.18em] text-powder md:-right-6 lg:-right-10">
@@ -30,12 +34,15 @@ const HomeAboutKizuna = () => {
 
           <div className="md:col-span-7">
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
-                About Kizuna
-              </p>
+              <div className="flex items-center gap-4">
+                <span aria-hidden="true" className="h-px w-12 bg-stone" />
+                <p className="text-xs uppercase tracking-[0.3em] text-eyebrow">
+                  About Kizuna
+                </p>
+              </div>
               <h2
                 id="kizuna-heading"
-                className="mt-6 text-3xl leading-[1.15] sm:text-4xl lg:text-[2.75rem]"
+                className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl lg:text-[2.85rem]"
               >
                 Empowering individuals, cultivating community, bridging cultures.
               </h2>

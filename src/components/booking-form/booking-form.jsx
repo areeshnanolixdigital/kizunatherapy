@@ -4,6 +4,7 @@ import { useActionState, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
 
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { submitBooking } from '@/app/actions/booking'
 import { THERAPISTS } from '@/constants/therapists'
 import { cn } from '@/lib/utils'
@@ -33,12 +34,10 @@ const BookingForm = () => {
     <section aria-labelledby="picker-heading" className="bg-powder">
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
-            Step one
-          </p>
+          <SectionEyebrow>Step one</SectionEyebrow>
           <h2
             id="picker-heading"
-            className="mt-6 text-3xl leading-[1.15] sm:text-4xl"
+            className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl"
           >
             Choose a therapist to begin.
           </h2>
@@ -59,7 +58,7 @@ const BookingForm = () => {
                   >
                     <div
                       className={cn(
-                        'relative aspect-[4/5] w-full overflow-hidden bg-sand transition-all',
+                        'relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-sand transition-all',
                         isSelected &&
                           'ring-2 ring-frond ring-offset-2 ring-offset-powder',
                       )}
@@ -70,8 +69,8 @@ const BookingForm = () => {
                         fill
                         sizes="(min-width: 1024px) 280px, (min-width: 768px) 30vw, 45vw"
                         className={cn(
-                          'object-cover transition-transform duration-700',
-                          !isSelected && 'group-hover:scale-[1.03] group-focus-visible:scale-[1.03]',
+                          'object-cover transition-transform duration-[900ms] ease-out',
+                          !isSelected && 'group-hover:scale-[1.04] group-focus-visible:scale-[1.04]',
                         )}
                       />
                     </div>
@@ -93,10 +92,8 @@ const BookingForm = () => {
           />
 
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
-              Step two
-            </p>
-            <h2 className="mt-6 text-3xl leading-[1.15] sm:text-4xl">
+            <SectionEyebrow>Step two</SectionEyebrow>
+            <h2 className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl">
               Tell us a little about yourself.
             </h2>
             <p className="mt-4 text-sm text-frond">

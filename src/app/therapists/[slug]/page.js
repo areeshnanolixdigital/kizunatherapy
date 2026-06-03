@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 import BookCta from '@/components/book-cta/book-cta'
 import HibiscusPetal from '@/components/decor/hibiscus-petal/hibiscus-petal'
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { SITE_NAME, SITE_URL } from '@/constants/site'
 import { getTherapistBySlug, THERAPISTS } from '@/constants/therapists'
 
@@ -29,8 +30,8 @@ const Section = ({ kicker, title, children }) => (
   <section className="border-t border-frond/15 py-12 first:border-t-0 first:pt-0 lg:py-16">
     <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
       <div className="md:col-span-4">
-        <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
-        <h2 className="mt-3 text-2xl">{title}</h2>
+        <SectionEyebrow>{kicker}</SectionEyebrow>
+        <h2 className="mt-4 text-2xl tracking-[-0.01em]">{title}</h2>
       </div>
       <div className="md:col-span-8">{children}</div>
     </div>
@@ -75,28 +76,34 @@ const TherapistProfilePage = async ({ params }) => {
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pt-20 pb-16 md:grid-cols-12 md:gap-12 md:pt-28 md:pb-20 lg:gap-16 lg:px-10 lg:pt-32 lg:pb-24">
           <div className="md:col-span-5 lg:col-span-5">
-            <div className="relative aspect-[4/5] w-full overflow-hidden bg-sand">
-              <Image
-                src={therapist.photo}
-                alt={`Portrait of ${therapist.name}`}
-                fill
-                sizes="(min-width: 1024px) 540px, (min-width: 768px) 42vw, 100vw"
-                priority
-                className="object-cover"
+            <figure className="group relative md:pl-4 md:pt-4">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute left-0 top-0 hidden h-[calc(100%-1rem)] w-[calc(100%-1rem)] border border-stone/50 md:block"
               />
-            </div>
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-sand">
+                <Image
+                  src={therapist.photo}
+                  alt={`Portrait of ${therapist.name}`}
+                  fill
+                  sizes="(min-width: 1024px) 540px, (min-width: 768px) 42vw, 100vw"
+                  priority
+                  className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                />
+              </div>
+            </figure>
           </div>
 
           <div className="md:col-span-7 lg:col-span-7 md:pt-6">
-            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
+            <SectionEyebrow>
               Therapist
               {therapist.note && (
-                <span className="ml-3 text-stem/70">· {therapist.note}</span>
+                <span className="ml-3 text-stem/80">· {therapist.note}</span>
               )}
-            </p>
+            </SectionEyebrow>
             <h1
               id="therapist-heading"
-              className="mt-6 text-4xl leading-[1.05] sm:text-5xl lg:text-6xl"
+              className="mt-7 text-4xl leading-[1.03] tracking-[-0.03em] sm:text-5xl lg:text-6xl"
             >
               {therapist.name}
             </h1>
@@ -179,7 +186,7 @@ const TherapistProfilePage = async ({ params }) => {
           </Section>
 
           <Section kicker="Philosophy" title="What guides the work">
-            <p className="font-serif text-xl leading-relaxed italic text-frond lg:text-2xl">
+            <p className="font-serif text-xl leading-relaxed text-frond lg:text-2xl">
               {therapist.philosophy}
             </p>
           </Section>

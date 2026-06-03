@@ -1,5 +1,6 @@
 import ContactForm from '@/components/contact-form/contact-form'
 import PageHero from '@/components/page-hero/page-hero'
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { CONTACT } from '@/constants/nav'
 
 export const metadata = {
@@ -14,7 +15,6 @@ const ContactPage = () => {
       <PageHero
         kicker="Contact"
         title="Get in touch with us."
-        italic="touch"
         subtitle="Ready to start your journey toward emotional well-being? Whether you have questions or are ready to book a session, our team is here. Reach out — and we will take the first step together."
       />
 
@@ -22,12 +22,12 @@ const ContactPage = () => {
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
           <div className="grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-12 lg:gap-20">
             <div className="md:col-span-5">
+              <SectionEyebrow>Reach us</SectionEyebrow>
               <h2
                 id="contact-details"
-                className="text-3xl leading-[1.15] sm:text-4xl"
+                className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl"
               >
-                We&apos;d love to{' '}
-                <em className="font-light italic text-eyebrow">hear from you</em>.
+                We&apos;d love to hear from you.
               </h2>
 
               <dl className="mt-10 space-y-8">

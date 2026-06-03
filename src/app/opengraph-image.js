@@ -45,7 +45,6 @@ const OpengraphImage = async () => {
             style={{
               fontSize: 96,
               lineHeight: 1.05,
-              fontStyle: 'italic',
               color: '#99BCA3',
               fontWeight: 300,
             }}

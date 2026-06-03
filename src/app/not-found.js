@@ -15,8 +15,7 @@ const NotFound = () => {
       <div className="relative mx-auto max-w-3xl px-6 py-32 lg:px-10 lg:py-40">
         <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">404</p>
         <h1 className="mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-6xl">
-          We couldn&apos;t find{' '}
-          <em className="font-light italic text-eyebrow">that page</em>.
+          We couldn&apos;t find that page.
         </h1>
         <p className="mt-8 max-w-prose text-lg leading-relaxed text-frond">
           It may have moved, or the link may be slightly off. Try one of the routes

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { MILESTONES } from '@/constants/milestones'
 
 const AboutMilestones = () => {
@@ -7,12 +8,10 @@ const AboutMilestones = () => {
     <section aria-labelledby="milestones-heading" className="bg-powder">
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
-            Our milestones
-          </p>
+          <SectionEyebrow>Our milestones</SectionEyebrow>
           <h2
             id="milestones-heading"
-            className="mt-6 text-3xl leading-[1.15] sm:text-4xl lg:text-5xl"
+            className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl lg:text-[3.25rem]"
           >
             Small steps, building toward something steady.
           </h2>
@@ -29,7 +28,7 @@ const AboutMilestones = () => {
               </span>
               <div>
                 <h3 className="text-xl sm:text-2xl">
-                  <span className="mr-3 font-serif text-base font-light text-eyebrow">
+                  <span className="mr-3 font-serif text-base font-light text-stone">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   {milestone.title}

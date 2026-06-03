@@ -2,23 +2,10 @@ import PropTypes from 'prop-types'
 
 import HibiscusPetal from '@/components/decor/hibiscus-petal/hibiscus-petal'
 import Reveal from '@/components/reveal/reveal'
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { cn } from '@/lib/utils'
 
-const PageHero = ({ kicker, title, subtitle, italic, align }) => {
-  const renderTitle = () => {
-    if (!italic || !title.includes(italic)) {
-      return title
-    }
-    const [before, after] = title.split(italic)
-    return (
-      <>
-        {before}
-        <em className="font-light italic text-eyebrow">{italic}</em>
-        {after}
-      </>
-    )
-  }
-
+const PageHero = ({ kicker, title, subtitle, align }) => {
   return (
     <section
       aria-labelledby="page-hero-heading"
@@ -40,15 +27,15 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
         >
           {kicker && (
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.24em] text-eyebrow">{kicker}</p>
+              <SectionEyebrow align={align}>{kicker}</SectionEyebrow>
             </Reveal>
           )}
           <Reveal delay={80}>
             <h1
               id="page-hero-heading"
-              className="mt-8 text-[2.5rem] leading-[1] sm:text-5xl lg:text-[5rem] xl:text-[5.5rem]"
+              className="mt-8 text-[2.5rem] leading-[1] tracking-[-0.03em] sm:text-5xl lg:text-[5rem] xl:text-[5.5rem]"
             >
-              {renderTitle()}
+              {title}
             </h1>
           </Reveal>
           {subtitle && (
@@ -68,14 +55,12 @@ PageHero.propTypes = {
   kicker: PropTypes.string,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  italic: PropTypes.string,
   align: PropTypes.oneOf(['left', 'center']),
 }
 
 PageHero.defaultProps = {
   kicker: '',
   subtitle: '',
-  italic: '',
   align: 'left',
 }
 

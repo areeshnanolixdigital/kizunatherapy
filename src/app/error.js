@@ -9,8 +9,7 @@ const Error = ({ reset }) => {
       <div className="mx-auto max-w-3xl px-6 py-32 lg:px-10 lg:py-40">
         <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">Something went wrong</p>
         <h1 className="mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-6xl">
-          We hit a small{' '}
-          <em className="font-light italic text-eyebrow">snag</em>.
+          We hit a small snag.
         </h1>
         <p className="mt-8 max-w-prose text-lg leading-relaxed text-frond">
           Sorry — something on our end did not load as expected. You can try again, or

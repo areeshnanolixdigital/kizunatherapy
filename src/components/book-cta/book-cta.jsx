@@ -1,20 +1,19 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
+import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
+
 const BookCta = () => {
   return (
     <section aria-labelledby="book-cta-heading" className="bg-frond text-powder">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-20 lg:flex-row lg:items-end lg:justify-between lg:px-10 lg:py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-sand">
-            When you are ready
-          </p>
+          <SectionEyebrow tone="light">When you are ready</SectionEyebrow>
           <h2
             id="book-cta-heading"
-            className="mt-6 text-3xl leading-[1.15] sm:text-4xl lg:text-5xl"
+            className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl lg:text-[3.25rem]"
           >
-            Book your{' '}
-            <em className="font-light italic text-vein">first session</em>.
+            Book your first session.
           </h2>
         </div>
         <Link

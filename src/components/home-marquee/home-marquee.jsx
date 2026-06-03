@@ -1,7 +1,5 @@
 import { MARQUEE_TAGS } from '@/constants/services'
 
-const SEPARATOR = '✦'
-
 const HomeMarquee = () => {
   const items = [...MARQUEE_TAGS, ...MARQUEE_TAGS]
 
@@ -20,9 +18,7 @@ const HomeMarquee = () => {
             className="inline-flex shrink-0 items-center gap-10 px-10 font-serif text-2xl font-light tracking-tight text-eyebrow sm:text-3xl"
           >
             {tag}
-            <span aria-hidden="true" className="text-eyebrow">
-              {SEPARATOR}
-            </span>
+            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-stone" />
           </span>
         ))}
       </div>
