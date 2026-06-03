@@ -42,3 +42,5 @@ next-env.d.ts
 
 # claude
 .claude/settings.local.json
+.claude/skills/playwright-skill/.temp-execution-*.js
+.claude/skills/playwright-skill/node_modules/

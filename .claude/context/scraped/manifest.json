@@ -1,0 +1,230 @@
+{
+  "scrapedAt": "2026-06-03T13:58:46.658Z",
+  "base": "https://kizunatherapy.com",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://kizunatherapy.com/index.php",
+      "title": "Home | Kizuna Therapy",
+      "h1": [
+        "Bridging Cultures, Building\nBonds, Transforming Lives"
+      ],
+      "imageCount": 8,
+      "textBytes": 13720,
+      "loadError": null
+    },
+    {
+      "slug": "about",
+      "url": "https://kizunatherapy.com/about-us.php",
+      "title": "About Us | Kizuna Therapy",
+      "h1": [
+        "Who We Are"
+      ],
+      "imageCount": 14,
+      "textBytes": 7112,
+      "loadError": null
+    },
+    {
+      "slug": "services",
+      "url": "https://kizunatherapy.com/services.php",
+      "title": "Our Services | Kizuna Therapy",
+      "h1": [],
+      "imageCount": 1,
+      "textBytes": 5040,
+      "loadError": null
+    },
+    {
+      "slug": "book-session",
+      "url": "https://kizunatherapy.com/book-session.php",
+      "title": "Book a Session",
+      "h1": [
+        "Book a Session",
+        "Select Your Psychologist"
+      ],
+      "imageCount": 8,
+      "textBytes": 3657,
+      "loadError": null
+    },
+    {
+      "slug": "contact",
+      "url": "https://kizunatherapy.com/contact.php",
+      "title": "Contact Us | Kizuna Therapy",
+      "h1": [
+        "Contact Us"
+      ],
+      "imageCount": 2,
+      "textBytes": 3195,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-eya-kallel",
+      "url": "https://kizunatherapy.com/eya-kallel.php",
+      "title": "Eya Kallel | Clinical Psychologist",
+      "h1": [
+        "Eya Kallel"
+      ],
+      "imageCount": 2,
+      "textBytes": 4372,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-ghania-ali",
+      "url": "https://kizunatherapy.com/ghania-ali.php",
+      "title": "Ghania Ali | Counseling Psychologist (Founder)",
+      "h1": [
+        "Ghania Ali"
+      ],
+      "imageCount": 2,
+      "textBytes": 4654,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-merve-arslanoglu",
+      "url": "https://kizunatherapy.com/merve-arslanoglu.php",
+      "title": "Merve Arslanoğlu | Counseling Psychologist",
+      "h1": [
+        "Merve Arslanoğlu"
+      ],
+      "imageCount": 2,
+      "textBytes": 4423,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-mariam-anisur-rahman",
+      "url": "https://kizunatherapy.com/mariam-anisur-rahman.php",
+      "title": "Mariam Anisur Rahman | Psychological Counselor",
+      "h1": [
+        "Mariam Anisur Rahman"
+      ],
+      "imageCount": 2,
+      "textBytes": 3801,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-sabrine-ben-omrane",
+      "url": "https://kizunatherapy.com/sabrine-ben-omrane.php",
+      "title": "Sabrine Ben Omrane | Counseling Psychologist",
+      "h1": [
+        "Sabrine Ben Omrane"
+      ],
+      "imageCount": 2,
+      "textBytes": 3931,
+      "loadError": null
+    },
+    {
+      "slug": "therapist-yara-halawa",
+      "url": "https://kizunatherapy.com/yara-halawa.php",
+      "title": "Yara Halawa | Counseling Psychotherapist",
+      "h1": [
+        "Yara Halawa"
+      ],
+      "imageCount": 2,
+      "textBytes": 4393,
+      "loadError": null
+    }
+  ],
+  "images": [
+    {
+      "src": "https://kizunatherapy.com/assets/images/logo.png",
+      "file": "images/assets/images/logo.png",
+      "bytes": 504314,
+      "contentType": "image/png"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/logo-1.jpg",
+      "file": "images/assets/images/logo-1.jpg",
+      "bytes": 446367,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/eya.jpg",
+      "file": "images/assets/images/therapist/eya.jpg",
+      "bytes": 375510,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/ghania.jpg",
+      "file": "images/assets/images/therapist/ghania.jpg",
+      "bytes": 199685,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/merve.jpg",
+      "file": "images/assets/images/therapist/merve.jpg",
+      "bytes": 179607,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/yara.jpg",
+      "file": "images/assets/images/therapist/yara.jpg",
+      "bytes": 345097,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/mariam.jpg",
+      "file": "images/assets/images/therapist/mariam.jpg",
+      "bytes": 1225356,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/therapist/sabrine.jpg",
+      "file": "images/assets/images/therapist/sabrine.jpg",
+      "bytes": 1147412,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/about-us.jpg",
+      "file": "images/assets/images/about-us.jpg",
+      "bytes": 3393509,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/milestone/1.jpg",
+      "file": "images/assets/images/milestone/1.jpg",
+      "bytes": 46365,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/milestone/2.jpg",
+      "file": "images/assets/images/milestone/2.jpg",
+      "bytes": 581107,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/milestone/3.jpg",
+      "file": "images/assets/images/milestone/3.jpg",
+      "bytes": 425770,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/milestone/4.jpg",
+      "file": "images/assets/images/milestone/4.jpg",
+      "bytes": 209731,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/milestone/5.jpg",
+      "file": "images/assets/images/milestone/5.jpg",
+      "bytes": 253039,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/a-b.jpg",
+      "file": "images/assets/images/a-b.jpg",
+      "bytes": 65310,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/book-seesion.jpg",
+      "file": "images/assets/images/book-seesion.jpg",
+      "bytes": 195659,
+      "contentType": "image/jpeg"
+    },
+    {
+      "src": "https://kizunatherapy.com/assets/images/contact.jpg",
+      "file": "images/assets/images/contact.jpg",
+      "bytes": 215551,
+      "contentType": "image/jpeg"
+    }
+  ]
+}
