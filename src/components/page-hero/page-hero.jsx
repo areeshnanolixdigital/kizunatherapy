@@ -29,31 +29,31 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
       />
       <div
         className={cn(
-          'relative mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-28 md:pb-20 lg:px-10 lg:pt-32 lg:pb-24',
+          'relative mx-auto max-w-7xl px-6 pt-24 pb-20 md:pt-32 md:pb-24 lg:px-10 lg:pt-40 lg:pb-32',
         )}
       >
         <div
           className={cn(
-            'max-w-3xl',
+            'max-w-4xl',
             align === 'center' && 'mx-auto text-center',
           )}
         >
           {kicker && (
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-eyebrow">{kicker}</p>
             </Reveal>
           )}
           <Reveal delay={80}>
             <h1
               id="page-hero-heading"
-              className="mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-[3.5rem]"
+              className="mt-8 text-[2.5rem] leading-[1] sm:text-5xl lg:text-[5rem] xl:text-[5.5rem]"
             >
               {renderTitle()}
             </h1>
           </Reveal>
           {subtitle && (
             <Reveal delay={160}>
-              <p className="mt-6 max-w-prose text-lg leading-relaxed text-frond">
+              <p className="mt-10 max-w-prose text-lg leading-relaxed text-frond md:text-xl">
                 {subtitle}
               </p>
             </Reveal>
