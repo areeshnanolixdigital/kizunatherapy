@@ -20,7 +20,7 @@ const HomeAboutKizuna = () => {
                 />
               </div>
               <figcaption className="absolute -right-4 bottom-8 max-w-[200px] bg-frond px-4 py-3 text-xs uppercase tracking-[0.18em] text-powder md:-right-6 lg:-right-10">
-                <span className="text-stone">Since 2024</span>
+                <span className="text-sand">Since 2024</span>
                 <span className="mt-1 block normal-case tracking-normal text-powder/85">
                   Fostering bonds for healing and growth.
                 </span>
@@ -30,7 +30,7 @@ const HomeAboutKizuna = () => {
 
           <div className="md:col-span-7">
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.22em] text-stone">
+              <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
                 About Kizuna
               </p>
               <h2
@@ -40,7 +40,7 @@ const HomeAboutKizuna = () => {
                 Empowering individuals, cultivating community, bridging cultures.
               </h2>
             </Reveal>
-            <div className="mt-8 space-y-5 text-base leading-relaxed text-frond/80 lg:text-lg">
+            <div className="mt-8 space-y-5 text-base leading-relaxed text-frond lg:text-lg">
               <p>
                 At Kizuna Therapy &amp; Wellness, we believe every journey is unique
                 yet deeply interconnected with the communities we engage with. Rooted in
@@ -61,7 +61,7 @@ const HomeAboutKizuna = () => {
                     aria-hidden="true"
                     className="mt-2.5 inline-block h-px w-6 shrink-0 bg-stone"
                   />
-                  <span className="text-base text-frond/85">{point}</span>
+                  <span className="text-base text-frond">{point}</span>
                 </li>
               ))}
             </ul>

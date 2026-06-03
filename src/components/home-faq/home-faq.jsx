@@ -9,7 +9,7 @@ const HomeFaq = () => {
       <div className="mx-auto max-w-5xl px-6 py-24 lg:px-10 lg:py-32">
         <Reveal>
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">
+            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
               Frequently asked
             </p>
             <h2
@@ -18,7 +18,7 @@ const HomeFaq = () => {
             >
               Questions, before we begin.
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-frond/75">
+            <p className="mt-6 text-base leading-relaxed text-frond">
               A few of the questions we hear most often. If yours isn&apos;t here, reach
               out — we&apos;d rather you ask than wonder.
             </p>
@@ -37,10 +37,10 @@ const HomeFaq = () => {
                   aria-hidden="true"
                   size={20}
                   strokeWidth={1.5}
-                  className="mt-1 shrink-0 text-stone transition-transform group-open:rotate-45"
+                  className="mt-1 shrink-0 text-eyebrow transition-transform group-open:rotate-45"
                 />
               </summary>
-              <p className="max-w-prose pb-7 text-base leading-relaxed text-frond/75">
+              <p className="max-w-prose pb-7 text-base leading-relaxed text-frond">
                 {item.answer}
               </p>
             </details>

@@ -11,7 +11,7 @@ export const metadata = {
 
 const BookingFormFallback = () => (
   <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
-    <p className="text-sm text-frond/60">Loading booking form…</p>
+    <p className="text-sm text-frond">Loading booking form…</p>
   </section>
 )
 

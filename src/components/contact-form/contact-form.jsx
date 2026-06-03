@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 
 const initialState = { ok: null, error: '', message: '' }
 
-const fieldLabel = 'block text-xs uppercase tracking-[0.18em] text-stone'
+const fieldLabel = 'block text-xs uppercase tracking-[0.18em] text-eyebrow'
 const fieldInput =
   'mt-3 block w-full border-b border-frond/25 bg-transparent py-2 text-base text-frond placeholder-frond/40 focus:border-stem focus:outline-none'
 
@@ -52,7 +52,7 @@ const ContactForm = () => {
         </div>
         <div className="md:col-span-2">
           <label htmlFor="contact-phone" className={fieldLabel}>
-            Phone <span className="ml-2 normal-case tracking-normal text-frond/50">optional</span>
+            Phone <span className="ml-2 normal-case tracking-normal text-frond/75">optional</span>
           </label>
           <input
             id="contact-phone"
@@ -89,7 +89,7 @@ const ContactForm = () => {
           role={state?.ok === false ? 'alert' : 'status'}
           className={cn(
             'text-sm',
-            state?.ok === true && 'text-stem',
+            state?.ok === true && 'text-eyebrow',
             state?.ok === false && 'text-destructive',
           )}
         >

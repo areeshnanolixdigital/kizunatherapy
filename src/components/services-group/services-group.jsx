@@ -8,9 +8,9 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">{kicker}</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
             <h2 className="mt-6 text-3xl leading-[1.15] sm:text-4xl">{title}</h2>
-            <p className="mt-6 max-w-sm text-base leading-relaxed text-frond/75">
+            <p className="mt-6 max-w-sm text-base leading-relaxed text-frond">
               {intro}
             </p>
           </div>
@@ -20,8 +20,8 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
               {items.map((item) => (
                 <li key={item.name}>
                   <h3 className="text-2xl">{item.name}</h3>
-                  <p className="mt-2 font-serif italic text-stem">{item.tagline}</p>
-                  <p className="mt-4 max-w-prose text-base leading-relaxed text-frond/80">
+                  <p className="mt-2 font-serif italic text-eyebrow">{item.tagline}</p>
+                  <p className="mt-4 max-w-prose text-base leading-relaxed text-frond">
                     {item.body}
                   </p>
                 </li>

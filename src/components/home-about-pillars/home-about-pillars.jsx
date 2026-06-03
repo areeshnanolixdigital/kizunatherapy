@@ -10,13 +10,13 @@ const HomeAboutPillars = () => {
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <Reveal>
           <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">About us</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">About us</p>
             <h2
               id="pillars-heading"
               className="mt-6 text-3xl leading-[1.15] sm:text-4xl lg:text-5xl"
             >
               Fostering genuine connection and{' '}
-              <em className="font-light italic text-stem">cultural understanding</em>{' '}
+              <em className="font-light italic text-eyebrow">cultural understanding</em>{' '}
               through therapy.
             </h2>
           </div>
@@ -34,12 +34,12 @@ const HomeAboutPillars = () => {
                     : ''
               }
             >
-              <p className="font-serif text-5xl font-light text-stone">
+              <p className="font-serif text-5xl font-light text-eyebrow">
                 {String(index + 1).padStart(2, '0')}
               </p>
               <div className="mt-4 h-px w-12 bg-vein" aria-hidden="true" />
               <h3 className="mt-6 text-2xl">{pillar.title}</h3>
-              <p className="mt-3 max-w-xs text-base leading-relaxed text-frond/75">
+              <p className="mt-3 max-w-xs text-base leading-relaxed text-frond">
                 {pillar.description}
               </p>
             </div>

@@ -13,7 +13,7 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
     return (
       <>
         {before}
-        <em className="font-light italic text-stem">{italic}</em>
+        <em className="font-light italic text-eyebrow">{italic}</em>
         {after}
       </>
     )
@@ -25,7 +25,7 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
       className="relative overflow-hidden bg-powder"
     >
       <HibiscusPetal
-        className="pointer-events-none absolute -bottom-32 -right-24 hidden h-[380px] w-[380px] -rotate-[28deg] text-stone/12 md:block"
+        className="pointer-events-none absolute -bottom-32 -right-24 hidden h-[380px] w-[380px] -rotate-[28deg] text-stem/12 md:block"
       />
       <div
         className={cn(
@@ -40,7 +40,7 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
         >
           {kicker && (
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.22em] text-stone">{kicker}</p>
+              <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
             </Reveal>
           )}
           <Reveal delay={80}>
@@ -53,7 +53,7 @@ const PageHero = ({ kicker, title, subtitle, italic, align }) => {
           </Reveal>
           {subtitle && (
             <Reveal delay={160}>
-              <p className="mt-6 max-w-prose text-lg leading-relaxed text-frond/80">
+              <p className="mt-6 max-w-prose text-lg leading-relaxed text-frond">
                 {subtitle}
               </p>
             </Reveal>

@@ -6,7 +6,7 @@ const BookCta = () => {
     <section aria-labelledby="book-cta-heading" className="bg-frond text-powder">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-20 lg:flex-row lg:items-end lg:justify-between lg:px-10 lg:py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-stone">
+          <p className="text-xs uppercase tracking-[0.22em] text-sand">
             When you are ready
           </p>
           <h2

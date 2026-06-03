@@ -16,7 +16,7 @@ const HomeTherapists = () => {
         <Reveal>
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.22em] text-stone">
+              <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
                 The practice
               </p>
               <h2
@@ -26,7 +26,7 @@ const HomeTherapists = () => {
                 Meet our therapists.
               </h2>
             </div>
-            <p className="max-w-sm text-base text-frond/70">
+            <p className="max-w-sm text-base text-frond">
               A small, multilingual practice — six therapists across continents and
               traditions, all trained to hold a steady, culturally attuned space.
             </p>
@@ -53,7 +53,7 @@ const HomeTherapists = () => {
                   <h3 className="text-xl">
                     {therapist.name}
                     {therapist.note && (
-                      <span className="ml-2 align-middle text-xs uppercase tracking-[0.16em] text-stone">
+                      <span className="ml-2 align-middle text-xs uppercase tracking-[0.16em] text-eyebrow">
                         {therapist.note}
                       </span>
                     )}
@@ -61,14 +61,14 @@ const HomeTherapists = () => {
                   <ArrowRight
                     aria-hidden="true"
                     size={18}
-                    className="shrink-0 text-stone transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1"
+                    className="shrink-0 text-eyebrow transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1"
                   />
                 </div>
-                <p className="mt-3 text-sm text-frond/70">{therapist.title}</p>
-                <p className="mt-1 text-sm text-frond/60">
+                <p className="mt-3 text-sm text-frond">{therapist.title}</p>
+                <p className="mt-1 text-sm text-frond">
                   {therapist.topSpecialty}
                 </p>
-                <p className="mt-3 text-xs uppercase tracking-[0.16em] text-stone">
+                <p className="mt-3 text-xs uppercase tracking-[0.16em] text-eyebrow">
                   {therapist.languages.join(' · ')}
                 </p>
               </Link>

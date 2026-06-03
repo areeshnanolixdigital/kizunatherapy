@@ -7,12 +7,12 @@ const Error = ({ reset }) => {
   return (
     <section className="bg-powder">
       <div className="mx-auto max-w-3xl px-6 py-32 lg:px-10 lg:py-40">
-        <p className="text-xs uppercase tracking-[0.22em] text-stone">Something went wrong</p>
+        <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">Something went wrong</p>
         <h1 className="mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-6xl">
           We hit a small{' '}
-          <em className="font-light italic text-stem">snag</em>.
+          <em className="font-light italic text-eyebrow">snag</em>.
         </h1>
-        <p className="mt-8 max-w-prose text-lg leading-relaxed text-frond/80">
+        <p className="mt-8 max-w-prose text-lg leading-relaxed text-frond">
           Sorry — something on our end did not load as expected. You can try again, or
           head back home.
         </p>
@@ -27,7 +27,7 @@ const Error = ({ reset }) => {
           </button>
           <Link
             href="/"
-            className="text-sm text-frond/70 underline decoration-stone underline-offset-4 transition-colors hover:text-stem hover:decoration-stem"
+            className="text-sm text-frond underline decoration-stone underline-offset-4 transition-colors hover:text-eyebrow hover:decoration-stem"
           >
             Back to home
           </Link>

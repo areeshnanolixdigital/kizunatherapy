@@ -10,7 +10,7 @@ const HomeServices = () => {
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <Reveal className="md:col-span-5 lg:col-span-4">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">
+            <p className="text-xs uppercase tracking-[0.22em] text-sand">
               Therapy services
             </p>
             <h2
@@ -32,7 +32,7 @@ const HomeServices = () => {
                 key={service.title}
                 className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-1 border-t border-sand/15 py-7 first:border-t-0 first:pt-0 sm:gap-x-12"
               >
-                <span className="font-serif text-2xl font-light text-stone sm:text-3xl">
+                <span className="font-serif text-2xl font-light text-sand sm:text-3xl">
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <div>

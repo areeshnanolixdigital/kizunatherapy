@@ -29,7 +29,7 @@ const Section = ({ kicker, title, children }) => (
   <section className="border-t border-frond/15 py-12 first:border-t-0 first:pt-0 lg:py-16">
     <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
       <div className="md:col-span-4">
-        <p className="text-xs uppercase tracking-[0.22em] text-stone">{kicker}</p>
+        <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">{kicker}</p>
         <h2 className="mt-3 text-2xl">{title}</h2>
       </div>
       <div className="md:col-span-8">{children}</div>
@@ -71,7 +71,7 @@ const TherapistProfilePage = async ({ params }) => {
         aria-labelledby="therapist-heading"
         className="relative overflow-hidden bg-powder"
       >
-        <HibiscusPetal className="pointer-events-none absolute -top-32 -right-24 hidden h-[420px] w-[420px] -rotate-[20deg] text-stone/12 md:block" />
+        <HibiscusPetal className="pointer-events-none absolute -top-32 -right-24 hidden h-[420px] w-[420px] -rotate-[20deg] text-stem/12 md:block" />
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pt-20 pb-16 md:grid-cols-12 md:gap-12 md:pt-28 md:pb-20 lg:gap-16 lg:px-10 lg:pt-32 lg:pb-24">
           <div className="md:col-span-5 lg:col-span-5">
@@ -88,10 +88,10 @@ const TherapistProfilePage = async ({ params }) => {
           </div>
 
           <div className="md:col-span-7 lg:col-span-7 md:pt-6">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">
+            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
               Therapist
               {therapist.note && (
-                <span className="ml-3 text-stone/70">· {therapist.note}</span>
+                <span className="ml-3 text-stem/70">· {therapist.note}</span>
               )}
             </p>
             <h1
@@ -100,8 +100,8 @@ const TherapistProfilePage = async ({ params }) => {
             >
               {therapist.name}
             </h1>
-            <p className="mt-6 text-lg text-frond/80">{therapist.title}</p>
-            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone">
+            <p className="mt-6 text-lg text-frond">{therapist.title}</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-eyebrow">
               {therapist.languages.join(' · ')}
             </p>
 
@@ -119,7 +119,7 @@ const TherapistProfilePage = async ({ params }) => {
               </Link>
               <a
                 href={`mailto:${therapist.email}`}
-                className="text-sm text-frond/70 underline decoration-stone underline-offset-4 transition-colors hover:text-stem hover:decoration-stem"
+                className="text-sm text-frond underline decoration-stone underline-offset-4 transition-colors hover:text-eyebrow hover:decoration-stem"
               >
                 {therapist.email}
               </a>
@@ -131,7 +131,7 @@ const TherapistProfilePage = async ({ params }) => {
       <div className="bg-powder">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
           <Section kicker="Professional overview" title="In her practice">
-            <p className="text-base leading-relaxed text-frond/85 lg:text-lg">
+            <p className="text-base leading-relaxed text-frond lg:text-lg">
               {therapist.overview}
             </p>
           </Section>
@@ -139,7 +139,7 @@ const TherapistProfilePage = async ({ params }) => {
           <Section kicker="Specializations" title="Areas of focus">
             <ul className="grid grid-cols-1 gap-y-3 sm:grid-cols-2 sm:gap-x-8">
               {therapist.specializations.map((item) => (
-                <li key={item} className="flex gap-3 text-base text-frond/85">
+                <li key={item} className="flex gap-3 text-base text-frond">
                   <span
                     aria-hidden="true"
                     className="mt-2.5 inline-block h-px w-5 shrink-0 bg-stone"
@@ -153,7 +153,7 @@ const TherapistProfilePage = async ({ params }) => {
           <Section kicker="Therapeutic approaches" title="How she works">
             <ul className="space-y-3">
               {therapist.approaches.map((item) => (
-                <li key={item} className="flex gap-3 text-base text-frond/85">
+                <li key={item} className="flex gap-3 text-base text-frond">
                   <span
                     aria-hidden="true"
                     className="mt-2.5 inline-block h-px w-5 shrink-0 bg-stone"
@@ -167,7 +167,7 @@ const TherapistProfilePage = async ({ params }) => {
           <Section kicker="Education" title="Training">
             <ul className="space-y-3">
               {therapist.education.map((item) => (
-                <li key={item} className="flex gap-3 text-base text-frond/85">
+                <li key={item} className="flex gap-3 text-base text-frond">
                   <span
                     aria-hidden="true"
                     className="mt-2.5 inline-block h-px w-5 shrink-0 bg-stone"
@@ -179,7 +179,7 @@ const TherapistProfilePage = async ({ params }) => {
           </Section>
 
           <Section kicker="Philosophy" title="What guides the work">
-            <p className="font-serif text-xl leading-relaxed italic text-frond/80 lg:text-2xl">
+            <p className="font-serif text-xl leading-relaxed italic text-frond lg:text-2xl">
               {therapist.philosophy}
             </p>
           </Section>

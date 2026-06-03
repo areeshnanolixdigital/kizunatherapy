@@ -17,10 +17,10 @@ const HomeMarquee = () => {
         {items.map((tag, index) => (
           <span
             key={`${tag}-${index}`}
-            className="inline-flex shrink-0 items-center gap-10 px-10 font-serif text-2xl font-light tracking-tight text-stem sm:text-3xl"
+            className="inline-flex shrink-0 items-center gap-10 px-10 font-serif text-2xl font-light tracking-tight text-eyebrow sm:text-3xl"
           >
             {tag}
-            <span aria-hidden="true" className="text-stone">
+            <span aria-hidden="true" className="text-eyebrow">
               {SEPARATOR}
             </span>
           </span>

@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 
 const initialState = { ok: null, error: '', message: '' }
 
-const fieldLabel = 'block text-xs uppercase tracking-[0.18em] text-stone'
+const fieldLabel = 'block text-xs uppercase tracking-[0.18em] text-eyebrow'
 const fieldInput =
   'mt-3 block w-full border-b border-frond/25 bg-transparent py-2 text-base text-frond placeholder-frond/40 focus:border-stem focus:outline-none'
 
@@ -33,7 +33,7 @@ const BookingForm = () => {
     <section aria-labelledby="picker-heading" className="bg-powder">
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.22em] text-stone">
+          <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
             Step one
           </p>
           <h2
@@ -76,7 +76,7 @@ const BookingForm = () => {
                       />
                     </div>
                     <p className="mt-4 text-base text-frond">{therapist.name}</p>
-                    <p className="mt-1 text-sm text-frond/70">{therapist.title}</p>
+                    <p className="mt-1 text-sm text-frond">{therapist.title}</p>
                   </button>
                 </li>
               )
@@ -93,13 +93,13 @@ const BookingForm = () => {
           />
 
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-stone">
+            <p className="text-xs uppercase tracking-[0.22em] text-eyebrow">
               Step two
             </p>
             <h2 className="mt-6 text-3xl leading-[1.15] sm:text-4xl">
               Tell us a little about yourself.
             </h2>
-            <p className="mt-4 text-sm text-frond/65">
+            <p className="mt-4 text-sm text-frond">
               {selectedTherapist
                 ? `Booking with ${selectedTherapist.name}.`
                 : 'No therapist selected yet — choose one above to continue.'}
@@ -135,7 +135,7 @@ const BookingForm = () => {
             </div>
             <div>
               <label htmlFor="phone" className={fieldLabel}>
-                Phone <span className="ml-2 normal-case tracking-normal text-frond/50">optional</span>
+                Phone <span className="ml-2 normal-case tracking-normal text-frond/75">optional</span>
               </label>
               <input
                 id="phone"
@@ -173,7 +173,7 @@ const BookingForm = () => {
             </div>
             <div className="md:col-span-2">
               <label htmlFor="reason" className={fieldLabel}>
-                What brings you here? <span className="ml-2 normal-case tracking-normal text-frond/50">optional</span>
+                What brings you here? <span className="ml-2 normal-case tracking-normal text-frond/75">optional</span>
               </label>
               <textarea
                 id="reason"
@@ -184,7 +184,7 @@ const BookingForm = () => {
             </div>
             <div className="md:col-span-2">
               <label htmlFor="notes" className={fieldLabel}>
-                Anything else we should know? <span className="ml-2 normal-case tracking-normal text-frond/50">optional</span>
+                Anything else we should know? <span className="ml-2 normal-case tracking-normal text-frond/75">optional</span>
               </label>
               <textarea
                 id="notes"
@@ -208,7 +208,7 @@ const BookingForm = () => {
               role={state?.ok === false ? 'alert' : 'status'}
               className={cn(
                 'text-sm',
-                state?.ok === true && 'text-stem',
+                state?.ok === true && 'text-eyebrow',
                 state?.ok === false && 'text-destructive',
               )}
             >
