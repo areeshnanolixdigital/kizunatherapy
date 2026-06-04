@@ -1,7 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { CONTACT, FOOTER_QUICK_LINKS } from '@/constants/nav'
+import InstagramIcon from '@/components/icons/instagram-icon'
+import LinkedinIcon from '@/components/icons/linkedin-icon'
+import { CONTACT, FOOTER_QUICK_LINKS, SOCIAL_LINKS } from '@/constants/nav'
+
+const SOCIAL_ICONS = {
+  instagram: InstagramIcon,
+  linkedin: LinkedinIcon,
+}
 
 const FOOTER_BLURB =
   'At Kizuna Therapy & Wellness, we focus on fostering connections and offering culturally sensitive care to help you heal and thrive.'
@@ -30,6 +37,24 @@ const SiteFooter = () => {
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-powder/85">
               {FOOTER_BLURB}
             </p>
+            <ul className="mt-6 flex items-center gap-3">
+              {SOCIAL_LINKS.map(({ label, href, icon }) => {
+                const Icon = SOCIAL_ICONS[icon]
+                return (
+                  <li key={href}>
+                    <a
+                      href={href}
+                      aria-label={`Kizuna Therapy on ${label}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="grid h-10 w-10 place-items-center rounded-full border border-sand/30 text-powder transition-colors hover:border-sand hover:bg-sand hover:text-frond focus-visible:bg-sand focus-visible:text-frond focus-visible:outline-none"
+                    >
+                      <Icon aria-hidden="true" size={18} strokeWidth={1.5} />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
           </section>
 
           <nav aria-labelledby="footer-links">

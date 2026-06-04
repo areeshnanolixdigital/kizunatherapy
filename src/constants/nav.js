@@ -21,3 +21,16 @@ export const CONTACT = {
   email: 'support@kizunatherapy.com',
   address: 'Beşiktaş, İstanbul, Türkiye 34400',
 }
+
+export const SOCIAL_LINKS = [
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/kizunatherapy/',
+    icon: 'instagram',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/kizuna-therapy-wellness',
+    icon: 'linkedin',
+  },
+]
