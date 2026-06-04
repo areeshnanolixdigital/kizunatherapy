@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
@@ -68,14 +67,18 @@ const HomeHero = () => {
               className="pointer-events-none absolute -left-4 -top-4 hidden h-full w-full border border-stone/50 md:block"
             />
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-sand md:aspect-[3/4]">
-              <Image
-                src="/images/about-kizuna.jpg"
-                alt="A Kizuna Therapy group session held outdoors in Istanbul"
-                fill
-                sizes="(min-width: 1024px) 540px, (min-width: 768px) 42vw, 100vw"
-                priority
-                className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/images/about-kizuna.jpg"
+                aria-label="Kizuna Therapy — moments of connection and care"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+              >
+                <source src="/videos/hero.mp4" type="video/mp4" />
+              </video>
               <span
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 bg-gradient-to-t from-frond/20 via-transparent to-transparent"
