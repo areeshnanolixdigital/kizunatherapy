@@ -5,7 +5,24 @@ import { useEffect, useRef, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 
-const Reveal = ({ children, className, delay }) => {
+const HIDDEN_BY_DIRECTION = {
+  up: 'opacity-0 motion-safe:translate-y-4',
+  down: 'opacity-0 motion-safe:-translate-y-4',
+  left: 'opacity-0 motion-safe:-translate-x-5',
+  right: 'opacity-0 motion-safe:translate-x-5',
+  none: 'opacity-0',
+}
+
+const VISIBLE =
+  'opacity-100 motion-safe:translate-x-0 motion-safe:translate-y-0'
+
+const Reveal = ({
+  as: Tag = 'div',
+  children,
+  className = '',
+  delay = 0,
+  direction = 'up',
+}) => {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
 
@@ -36,31 +53,26 @@ const Reveal = ({ children, className, delay }) => {
   }, [])
 
   return (
-    <div
+    <Tag
       ref={ref}
       style={{ transitionDelay: visible && delay ? `${delay}ms` : '0ms' }}
       className={cn(
         'motion-safe:transition-all motion-safe:duration-700 motion-safe:ease-out',
-        visible
-          ? 'opacity-100 motion-safe:translate-y-0'
-          : 'opacity-0 motion-safe:translate-y-3',
+        visible ? VISIBLE : HIDDEN_BY_DIRECTION[direction],
         className,
       )}
     >
       {children}
-    </div>
+    </Tag>
   )
 }
 
 Reveal.propTypes = {
+  as: PropTypes.elementType,
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   delay: PropTypes.number,
-}
-
-Reveal.defaultProps = {
-  className: '',
-  delay: 0,
+  direction: PropTypes.oneOf(['up', 'down', 'left', 'right', 'none']),
 }
 
 export default Reveal

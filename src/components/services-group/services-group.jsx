@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+import Reveal from '@/components/reveal/reveal'
 import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { cn } from '@/lib/utils'
 
@@ -8,7 +9,7 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
     <section className={cn('bg-powder', accent === 'sand' && 'bg-sand/30')}>
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
-          <div className="md:col-span-5">
+          <Reveal direction="left" className="md:col-span-5">
             <SectionEyebrow>{kicker}</SectionEyebrow>
             <h2 className="mt-7 text-3xl leading-[1.12] tracking-[-0.02em] sm:text-4xl">
               {title}
@@ -16,13 +17,15 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
             <p className="mt-6 max-w-sm text-base leading-relaxed text-frond">
               {intro}
             </p>
-          </div>
+          </Reveal>
 
           <div className="md:col-span-7">
             <ul className="divide-y divide-frond/12">
               {items.map((item, index) => (
-                <li
+                <Reveal
+                  as="li"
                   key={item.name}
+                  delay={Math.min(index, 5) * 80}
                   className="grid grid-cols-[auto_1fr] gap-x-8 py-8 first:pt-0 sm:gap-x-12"
                 >
                   <span className="font-serif text-xl font-light text-stone sm:text-2xl">
@@ -37,7 +40,7 @@ const ServicesGroup = ({ kicker, title, intro, items, accent }) => {
                       {item.body}
                     </p>
                   </div>
-                </li>
+                </Reveal>
               ))}
             </ul>
           </div>

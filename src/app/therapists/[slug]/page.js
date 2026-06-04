@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 import BookCta from '@/components/book-cta/book-cta'
 import HibiscusPetal from '@/components/decor/hibiscus-petal/hibiscus-petal'
+import Reveal from '@/components/reveal/reveal'
 import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { SITE_NAME, SITE_URL } from '@/constants/site'
 import { getTherapistBySlug, THERAPISTS } from '@/constants/therapists'
@@ -29,11 +30,13 @@ const getFirstName = (name) => name.split(' ')[0]
 const Section = ({ kicker, title, children }) => (
   <section className="border-t border-frond/15 py-12 first:border-t-0 first:pt-0 lg:py-16">
     <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
-      <div className="md:col-span-4">
+      <Reveal direction="left" className="md:col-span-4">
         <SectionEyebrow>{kicker}</SectionEyebrow>
         <h2 className="mt-4 text-2xl tracking-[-0.01em]">{title}</h2>
-      </div>
-      <div className="md:col-span-8">{children}</div>
+      </Reveal>
+      <Reveal delay={120} className="md:col-span-8">
+        {children}
+      </Reveal>
     </div>
   </section>
 )

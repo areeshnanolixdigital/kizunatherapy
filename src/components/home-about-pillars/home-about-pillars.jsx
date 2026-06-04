@@ -26,7 +26,7 @@ const HomeAboutPillars = () => {
 
         <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10">
           {PILLARS.map((pillar, index) => (
-            <div key={pillar.title}>
+            <Reveal key={pillar.title} delay={index * 110}>
               <p className="font-serif text-6xl font-light text-stone">
                 {String(index + 1).padStart(2, '0')}
               </p>
@@ -35,7 +35,7 @@ const HomeAboutPillars = () => {
               <p className="mt-3 max-w-xs text-base leading-relaxed text-frond">
                 {pillar.description}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

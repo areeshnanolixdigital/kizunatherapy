@@ -1,5 +1,6 @@
 import ContactForm from '@/components/contact-form/contact-form'
 import PageHero from '@/components/page-hero/page-hero'
+import Reveal from '@/components/reveal/reveal'
 import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { CONTACT } from '@/constants/nav'
 
@@ -21,7 +22,7 @@ const ContactPage = () => {
       <section aria-labelledby="contact-details" className="bg-powder">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
           <div className="grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-12 lg:gap-20">
-            <div className="md:col-span-5">
+            <Reveal direction="left" className="md:col-span-5">
               <SectionEyebrow>Reach us</SectionEyebrow>
               <h2
                 id="contact-details"
@@ -67,11 +68,11 @@ const ContactPage = () => {
                   </dd>
                 </div>
               </dl>
-            </div>
+            </Reveal>
 
-            <div className="md:col-span-7">
+            <Reveal direction="right" delay={120} className="md:col-span-7">
               <ContactForm />
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>

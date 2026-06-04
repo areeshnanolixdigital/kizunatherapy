@@ -30,8 +30,10 @@ const HomeServices = () => {
 
           <ol className="md:col-span-7 lg:col-span-8">
             {SERVICES.map((service, index) => (
-              <li
+              <Reveal
+                as="li"
                 key={service.title}
+                delay={Math.min(index, 5) * 70}
                 className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-1 border-t border-sand/15 py-8 first:border-t-0 first:pt-0 sm:gap-x-12"
               >
                 <span className="font-serif text-2xl font-light text-stone sm:text-3xl">
@@ -43,7 +45,7 @@ const HomeServices = () => {
                     {service.description}
                   </p>
                 </div>
-              </li>
+              </Reveal>
             ))}
           </ol>
         </div>

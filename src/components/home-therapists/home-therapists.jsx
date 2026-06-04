@@ -37,8 +37,13 @@ const HomeTherapists = () => {
         </Reveal>
 
         <ul className="mt-16 grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-          {THERAPISTS.map((therapist) => (
-            <li key={therapist.slug} className="group">
+          {THERAPISTS.map((therapist, index) => (
+            <Reveal
+              as="li"
+              key={therapist.slug}
+              delay={(index % 3) * 90}
+              className="group"
+            >
               <Link
                 href={`/therapists/${therapist.slug}`}
                 className="block focus-visible:outline-none"
@@ -83,7 +88,7 @@ const HomeTherapists = () => {
                   {therapist.languages.join(' · ')}
                 </p>
               </Link>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>

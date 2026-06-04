@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import Reveal from '@/components/reveal/reveal'
 import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 import { MILESTONES } from '@/constants/milestones'
 
@@ -7,7 +8,7 @@ const AboutMilestones = () => {
   return (
     <section aria-labelledby="milestones-heading" className="bg-powder">
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-        <div className="max-w-2xl">
+        <Reveal className="max-w-2xl">
           <SectionEyebrow>Our milestones</SectionEyebrow>
           <h2
             id="milestones-heading"
@@ -15,12 +16,14 @@ const AboutMilestones = () => {
           >
             Small steps, building toward something steady.
           </h2>
-        </div>
+        </Reveal>
 
         <ol className="mt-16 lg:mt-20">
           {MILESTONES.map((milestone, index) => (
-            <li
+            <Reveal
+              as="li"
               key={milestone.title}
+              delay={Math.min(index, 5) * 80}
               className="grid grid-cols-1 gap-x-12 gap-y-6 border-t border-frond/15 py-10 first:border-t-0 first:pt-0 sm:grid-cols-[160px_1fr_180px] sm:items-start"
             >
               <span className="text-xs uppercase tracking-[0.18em] text-eyebrow">
@@ -46,7 +49,7 @@ const AboutMilestones = () => {
                   className="object-cover"
                 />
               </div>
-            </li>
+            </Reveal>
           ))}
         </ol>
       </div>

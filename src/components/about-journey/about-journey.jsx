@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import Reveal from '@/components/reveal/reveal'
 import SectionEyebrow from '@/components/section-eyebrow/section-eyebrow'
 
 const AboutJourney = () => {
@@ -7,7 +8,7 @@ const AboutJourney = () => {
     <section aria-labelledby="journey-heading" className="bg-sand/30">
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
-          <div className="md:col-span-5">
+          <Reveal direction="left" className="md:col-span-5">
             <SectionEyebrow>Our journey</SectionEyebrow>
             <h2
               id="journey-heading"
@@ -30,9 +31,9 @@ const AboutJourney = () => {
                 />
               </div>
             </figure>
-          </div>
+          </Reveal>
 
-          <div className="md:col-span-7 md:pt-16 lg:pt-24">
+          <Reveal direction="right" delay={120} className="md:col-span-7 md:pt-16 lg:pt-24">
             <p className="text-base leading-relaxed text-frond lg:text-lg">
               Discover how Kizuna Therapy was founded, our milestones, and our ongoing
               dedication to building bonds and nurturing wellness.
@@ -51,7 +52,7 @@ const AboutJourney = () => {
                 feel heard, supported, and empowered.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
