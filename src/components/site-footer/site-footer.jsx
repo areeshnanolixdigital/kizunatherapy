@@ -80,18 +80,7 @@ const SiteFooter = () => {
         </div>
 
         <div className="mt-16 border-t border-sand/15 pt-6 text-xs text-powder/60">
-          <p>
-            &copy;{CURRENT_YEAR} Kizuna Therapy. All rights reserved. Powered by{' '}
-            <a
-              href="https://circles.ae/"
-              className="underline decoration-sand/40 underline-offset-2 transition-colors hover:text-sand"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Circles
-            </a>
-            .
-          </p>
+          <p>&copy;{CURRENT_YEAR} Kizuna Therapy. All rights reserved.</p>
         </div>
       </div>
     </footer>
